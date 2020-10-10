@@ -53,7 +53,7 @@ export default function App() {
         return item.id !== id;
       })
     );
-  };
+  }; 
 
   return (
     <>
