@@ -1,0 +1,82 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(3, 16, 48);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  @include for-tablet-landscape-down {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  @include for-phone-down {
+    padding: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  h1 {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+    font-family: $mainFont;
+    @include for-phone-down {
+      font-size: 16.5px;
+      margin-right: 0px;
+      padding: 4.7px 2px;
+    }
+  }
+  .nav {
+    width: 967px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include for-tablet-landscape-down {
+      width: 68%;
+    }
+    @include for-phone-down {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    .links {
+      display: flex;
+      margin: 0px 10px;
+      align-items: center;
+      padding: 5px;
+      @include for-phone-down {
+        margin: 0px;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin: 0rem 10px;
+      font-weight: bold;
+      font-family: $mainFont;
+
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+      font-style: oblique;
+      @include for-phone-down {
+        margin-right: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+}
