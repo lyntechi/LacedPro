@@ -1,0 +1,108 @@
+@import "./variables.scss";
+
+.Advertisement {
+  font-family: $mainFont;
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  background: rgba(201, 214, 245, 0.274);
+  @include for-tablet-landscape-down {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  @include for-phone-down {
+    padding: 0rem;
+  }
+
+  .titlesContainer {
+    display: flex;
+    width: 1020px;
+    margin: 0 auto;
+
+    @include for-tablet-landscape-down {
+      width: 580px;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 1rem;
+    }
+    @include for-phone-down {
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 1.5rem;
+    }
+    h1 {
+      font-size: 2.6rem;
+      color: rgba(95, 92, 92, 0.897);
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      @include for-tablet-landscape-down {
+        font-size: 1.7rem;
+        margin-bottom: 8px;
+      }
+      @include for-phone-down {
+        font-size: 22px;
+      }
+    }
+    p {
+      line-height: 20px;
+      width: 100%;
+      color: rgb(58, 55, 55);
+      @include for-tablet-landscape-down {
+        font-size: 13px;
+      }
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+    .titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .playIcon {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        border-left: 1px solid white;
+      }
+      button {
+        background: rgb(3, 16, 48);
+
+        width: 205px;
+        padding: 8px;
+        margin-top: 20px;
+        outline: none;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include for-tablet-landscape-down {
+          width: 165px;
+        }
+        @include for-phone-down {
+          width: 190px;
+          font-size: 10px;
+          margin: 25px auto;
+          padding: 4px;
+        }
+      }
+    }
+    img {
+      width: 590px;
+      height: auto;
+      @include for-tablet-landscape-down {
+        width: 320px;
+        margin-left: 8rem;
+      }
+      @include for-phone-down {
+        width: 280px;
+        margin-top: 5rem;
+        margin-left: 0rem;
+      }
+    }
+  }
+}
