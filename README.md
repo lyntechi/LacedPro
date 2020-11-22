@@ -2,7 +2,10 @@
 
 <h2>Installation</h2>
 This project uses npm. Use npm install in the /client directory.
-
+<h3>State Management</h3>
+<ul>
+<li>React Context API</li>
+</ul>
 <h3>Libraries & Programming Languages Used</h3>
 <ul>
 <li>React</li>
@@ -14,7 +17,4 @@ This project uses npm. Use npm install in the /client directory.
 <li>React-icons</li>
 <li>Reactstrap</li>
 </ul>
-<h3>State Management</h3>
-<ul>
-<li>React Context API</li>
-</ul>
+
