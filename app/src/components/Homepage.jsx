@@ -7,7 +7,6 @@ export default function Homepage() {
       <video autoPlay={true} loop={true}>
         <source
           src="https://static.nike.com/a/videos/q_90,vc_vp9/mccsot59vf09htkvgzdm/video.webm"
-          width="100%"
         />
       </video>
       <div className="banner-text">
