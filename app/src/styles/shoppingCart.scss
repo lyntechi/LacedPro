@@ -1,0 +1,421 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.mainContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  min-height: 100vh;
+  height: 100%;
+  padding: 5rem;
+  font-family: $mainFont;
+  @include for-tablet-landscape-down {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0rem;
+  }
+  @include for-phone-down {
+    padding: 0rem;
+  }
+  .cartAndTotal {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 100%;
+    padding: 0px 40px;
+
+    @include for-tablet-landscape-down {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      margin: 4rem auto;
+      padding: 0px 0px;
+    }
+    @include for-phone-down {
+      width: 100%;
+      margin: 2rem auto;
+    }
+  }
+  .cartContainer {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: $navFont;
+    position: relative;
+    width: 820px;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+
+    @include for-tablet-landscape-down {
+      margin-top: 5px;
+      align-self: center;
+      margin-left: 0rem;
+      width: 580px;
+    }
+    @include for-phone-down {
+      width: 90%;
+      padding: 0px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      color: ghostwhite;
+      font-family: $mainFont;
+      font-weight: bold;
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+
+    @include for-tablet-landscape-down {
+      display: flex;
+      justify-content: center;
+      max-height: 100%;
+    }
+
+    .cartItemCard {
+      display: flex;
+      border-radius: 5px;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 12px 0rem;
+
+      p {
+        font-size: 12px;
+        font-family: $mainFont;
+        color: black;
+        width: 65%;
+        @include for-phone-down {
+          font-size: 11px;
+          width: 100%;
+          padding: 0px 5px;
+        }
+      }
+
+      @include for-phone-down {
+        flex-direction: column;
+        margin: 0rem;
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 10px 10px;
+      }
+      h2 {
+        line-height: 20px;
+        color: rgb(0, 0, 0);
+        font-family: $mainFont;
+        font-weight: bold;
+        @include for-phone-down {
+          font-size: 12px;
+        }
+      }
+      img {
+        width: 220px;
+        height: auto;
+        // margin: 10px 10px;
+        border: 1px solid rgba(236, 220, 220, 0.856);
+        @include for-tablet-landscape-down {
+          width: 190px;
+          padding: 10px;
+          height: auto;
+        }
+        @include for-phone-down {
+          width: 50px;
+          height: auto;
+          align-self: center;
+          padding: 10px;
+
+          display: none;
+        }
+      }
+      .cartTitles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgba(236, 220, 220, 0.856);
+
+        @include for-tablet-landscape-down {
+          padding: 10px 10px;
+        }
+        @include for-phone-down {
+          padding: 0px 0px;
+        }
+        img {
+          display: none;
+          @include for-phone-down {
+            display: block;
+            width: 240px;
+            margin: 0 auto;
+            height: auto;
+          }
+        }
+        select {
+          font-size: 12.5px;
+          @include for-phone-down {
+            margin: 5px 0px;
+            font-size: 12px;
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+
+  .summaryCard {
+    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: $mainFont;
+    width: 820px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+
+    @include for-tablet-landscape-down {
+      margin: 3rem auto;
+
+      width: 580px;
+      align-items: center;
+    }
+    @include for-phone-down {
+      width: 90%;
+      margin: 3rem auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      @include for-phone-down {
+        font-size: 1.4rem;
+      }
+    }
+    p {
+      font-size: 13.5px;
+      margin-bottom: 5px;
+      color: rgb(0, 0, 0);
+      letter-spacing: 1px;
+      font-weight: bold;
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+    .checkoutBtn {
+      background-color: rgb(30, 173, 30);
+      font-size: 11px;
+      max-width: 180px;
+      align-self: center;
+      margin-bottom: 10px;
+      outline: none;
+      @include for-phone-down {
+        max-width: 100px;
+      }
+    }
+
+    .totalAndBtns {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px 0px;
+      border-top: 1px solid rgba(236, 220, 220, 0.856);
+    }
+  }
+}
+
+.visaForm {
+  background: rgba(51, 136, 248, 0.836);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .timesIcon {
+    color: ghostwhite;
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+    @include for-phone-down {
+      display: block;
+    }
+  }
+  img {
+    width: 130px;
+    height: auto;
+    align-self: center;
+    margin-top: 10px;
+    @include for-tablet-landscape-down {
+      width: 80px;
+    }
+    @include for-phone-down {
+      width: 80px;
+    }
+  }
+  label {
+    color: ghostwhite;
+    font-size: 13px;
+
+    @include for-phone-down {
+      font-size: 12px;
+    }
+  }
+  .submit {
+    font-size: 14px;
+    background-color: rgb(80, 200, 230);
+    border: none;
+    width: 50%;
+    margin-bottom: 10px;
+    outline: none;
+    @include for-phone-down {
+      font-size: 11px;
+    }
+  }
+  input {
+    background: rgba(255, 254, 254, 0.13);
+    border: none;
+    color: rgb(106, 106, 114);
+  }
+  .selectContainer {
+    display: flex;
+    align-items: center;
+    select {
+      outline: none;
+      font-size: 13px;
+
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+    p {
+      color: ghostwhite;
+      margin-right: 10px;
+      font-size: 13px;
+
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+    padding: 5px 0px;
+  }
+}
+
+.masterCardForm {
+  background: rgba(197, 20, 20, 0.836);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .timesIcon {
+    color: ghostwhite;
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+    @include for-phone-down {
+      display: block;
+    }
+  }
+  .mastercard {
+    width: 80px;
+    align-self: center;
+
+    @include for-tablet-landscape-down {
+      width: 70px;
+    }
+    @include for-phone-down {
+      width: 70px;
+    }
+  }
+  label {
+    color: ghostwhite;
+    font-size: 13px;
+
+    @include for-phone-down {
+      font-size: 12px;
+    }
+  }
+  .submit {
+    background-color: orange;
+    border: none;
+
+    font-size: 14px;
+
+    width: 50%;
+    margin-bottom: 10px;
+    outline: none;
+    @include for-phone-down {
+      font-size: 11px;
+    }
+  }
+  input {
+    background: rgba(255, 254, 254, 0.13);
+    border: none;
+    color: rgb(106, 106, 114);
+  }
+  .selectContainer {
+    display: flex;
+    align-items: center;
+    select {
+      outline: none;
+      font-size: 13px;
+
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+    p {
+      color: ghostwhite;
+      margin-right: 10px;
+      font-size: 13px;
+
+      @include for-phone-down {
+        font-size: 12px;
+      }
+    }
+    padding: 5px 0px;
+  }
+}
+#simple-popover
+  > div.MuiPaper-root.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded
+  > p {
+  padding: 0px;
+}
+
+.emptyContainer {
+  h2 {
+    font-size: 2rem;
+    color: darkgrey;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $checkout;
+    @include for-phone-down {
+      font-size: 16px;
+    }
+  }
+}
+#root > main > div > div.cartAndTotal > div.summaryCard > div > p {
+  font-family: $navFont;
+}
