@@ -128,9 +128,14 @@ body {
   font-family: "Lato", sans-serif;
   position: relative;
   background: $containerColors;
+  background: ghostwhite;
 }
 
 html,
 body {
   height: 100%;
+  background: ghostwhite;
+}
+main {
+  background: ghostwhite;
 }
