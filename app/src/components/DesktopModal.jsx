@@ -51,20 +51,25 @@ export default function DesktopModal({
   return (
     <div className="firstGroupImages">
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <img src={bigImageOne} onClick={firstImage} alt="small sneaker icon " />
-        <img src={bigImageTwo} onClick={secondImage} alt="small sneaker icon" />
+        <img src={bigImageOne} onClick={firstImage} alt="small sneaker icon " className="desktopImg"/>
+        <img src={bigImageTwo} onClick={secondImage} alt="small sneaker icon" className="desktopImg"/>
       </div>
-      <div style={{}}>{product.vid}</div>
+      {/* <div style={{}}> */}
+        {product.vid}
+        <img src={product.gif} className="video"/>
+        {/* </div> */}
       <div style={{ display: "flex", flexDirection: "column" }}>
         <img
           src={bigImageThree}
           onClick={thirdImage}
           alt="small sneaker icon"
+          className="desktopImg"
         />
         <img
           src={bigImageFour}
           onClick={fourthImage}
           alt="small sneaker icon"
+          className="desktopImg"
         />
       </div>
       <Modal

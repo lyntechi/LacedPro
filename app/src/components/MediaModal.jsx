@@ -51,7 +51,7 @@ export default function MediaModal({
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      {product.vid}
+      <img src={product.gif} className="video" />
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img

@@ -22,18 +22,7 @@ export const ItemProvider = (props) => {
         urlFour:
           "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/hv5b2bcifot9ctnxghn7/air-max-200-worlds-fastest-man-mens-shoe-29b3Dr.jpg",
       },
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474061989?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video6"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-9927187856ba.gif",
     },
     {
       name: "Men's Nike Air Max 270 Bowfin",
@@ -56,18 +45,7 @@ export const ItemProvider = (props) => {
         urlFive:
           "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/lcjcpfpxlsdquyineot8/air-max-270-bowfin-mens-shoe-0x4rcw.jpg",
       },
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474062368?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video8"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-ef644f3ac4b2.gif",
     },
     {
       name: "Men's Nike Air Max 270",
@@ -88,18 +66,7 @@ export const ItemProvider = (props) => {
         urlFour:
           "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/xatihjizboztykq5vzoz/air-max-270-react-pop-art-mens-shoes-bZ8t5l.jpg",
       },
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474061661?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video5"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-6faec897327f.gif",
     },
     {
       name: "Men's Nike Air Max 2090",
@@ -121,18 +88,7 @@ export const ItemProvider = (props) => {
         "Transparent fabric on the upper blends with timeless OG features for an edgy, modernized look.  More Air underfoot creates a softer, more comfortable ride while 360 degrees of ribbed, translucent rubber frames your air for a bold, futuristic look.",
       shipping:
         "Most of our items are in stock and will ship quickly. **Free shipping on all orders when purchases are made through account**",
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474050768?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video1"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-80d1336dff60.gif",
     },
 
     {
@@ -154,18 +110,7 @@ export const ItemProvider = (props) => {
         "Featuring the original ripple design inspired by Japanese bullet trains, the Nike Air Max 97 lets you push your style full-speed ahead. Taking the revolutionary full-length Nike Air unit that shook up the running world and adding fresh colors and crisp details, it lets you ride in first-class comfort.",
       shipping:
         "Most of our items are in stock and will ship quickly. **Free shipping on all orders when purchases are made through account**",
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474059604?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video2"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-98c21e758b09.gif",
     },
     {
       name: "Women's Nike Air Zoom",
@@ -187,18 +132,7 @@ export const ItemProvider = (props) => {
         "An icon hits the paths less traveled in the Nike Air Zoom Pegasus 36 Trail. Perforated mesh upper offers breathable comfort, and double Zoom Air units cushion your stride. Outsole lugs optimize traction when running uphill.",
       shipping:
         "Most of our items are in stock and will ship quickly. **Free shipping on all orders when purchases are made through account**",
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474059923?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video3"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-862a10b8510a.gif",
     },
 
     {
@@ -220,18 +154,7 @@ export const ItemProvider = (props) => {
         urlFour:
           "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/1aed8da5-a63e-475e-907b-361bd04c2f36/air-jordan-1-mid-se-mens-shoe-P7bjRV.jpg",
       },
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474061333?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video4"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-77028eb7fe17.gif",
     },
 
     {
@@ -253,18 +176,7 @@ export const ItemProvider = (props) => {
         urlFour:
           "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/fpx2jir0ibzz9f88py9e/air-max-720-mens-shoe-Nz7NKG.jpg",
       },
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474062174?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video7"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-c356b4c0e21b.gif",
     },
 
     {
@@ -286,18 +198,7 @@ export const ItemProvider = (props) => {
         "The Nike React Vision stands out whether you're at school or in the streets. It's lightweight on your feet and features Nike React technology for soft, bouncy, all-day cushioning.",
       shipping:
         "Most of our items are in stock and will ship quickly. **Free shipping on all orders when purchases are made through account**",
-      vid: (
-        <iframe
-          src="https://player.vimeo.com/video/474062549?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          width="560"
-          height="648"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-          title="video9"
-        ></iframe>
-      ),
+      gif: "https://s8.gifyu.com/images/ezgif-3-bfc1dd6fff5d.gif",
     },
   ]);
   return (

@@ -1,24 +1,23 @@
 @import "./variables.scss";
-@import './mixins.scss';
+@import "./mixins.scss";
 
 .Advertisement {
   font-family: $mainFont;
-  padding-top: 7rem;
-  padding-bottom: 3.5rem;
+  padding-top: 8rem;
   width: 100%;
-  margin-top: 2rem;
-  background: rgba(201, 214, 245, 0.274);
+  margin: 2rem auto;
   @include for-tablet-landscape-down {
     padding-top: 4rem;
     padding-bottom: 1rem;
   }
   @include for-phone-down {
-    padding: 0rem;
+    width: 320px;
+    padding-top: 2rem;
   }
 
   .titlesContainer {
     display: flex;
-    width: 1020px;
+    width: 1040px;
     margin: 0 auto;
 
     @include for-tablet-landscape-down {
@@ -34,10 +33,12 @@
       padding: 1.5rem;
     }
     h1 {
-      font-size: 2.6rem;
-      color: rgba(95, 92, 92, 0.897);
+      font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 10px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: #5e52ad;
 
       @include for-tablet-landscape-down {
         font-size: 1.7rem;
@@ -50,26 +51,28 @@
     p {
       line-height: 20px;
       width: 100%;
-      color: rgb(58, 55, 55);
+      color: #000000;
+
+      font-family: $links;
       @include for-tablet-landscape-down {
         font-size: 13px;
       }
       @include for-phone-down {
         font-size: 12px;
+        width: 100%;
       }
     }
     .titles {
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       .playIcon {
         font-size: 1.5rem;
         margin-left: 10px;
         border-left: 1px solid white;
       }
       button {
-        background: rgb(3, 16, 48);
+        background: #00b0ff;
 
         width: 205px;
         padding: 8px;

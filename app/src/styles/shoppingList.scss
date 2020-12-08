@@ -3,6 +3,15 @@
 
 main {
   height: 100%;
+  background: rgb(255, 255, 255);
+
+  // background-position: left top;
+
+  @include for-tablet-landscape-down {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .shoppingListPage {
   font-family: $mainFont;
@@ -13,7 +22,6 @@ main {
   width: 1190px;
   margin: 0px auto;
   margin-bottom: 8rem;
-  background: ghostwhite;
 
   @include for-tablet-landscape-down {
     width: 600px;
@@ -31,16 +39,17 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0px 38px;
-    width: 320px;
+    margin: 10px 15px;
+    width: 280px;
     height: auto;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    background-image: url("https://i.imgur.com/nLByz67.png");
     @include for-tablet-landscape-down {
-      width: 205px;
+      width: 255px;
     }
     @include for-phone-down {
       margin: 10px 40px;
-      background: whitesmoke;
-      width: 100%;
+      width: 255px;
       border: 1px solid rgba(128, 128, 128, 0.171);
     }
 
@@ -49,7 +58,6 @@ main {
       flex-direction: column;
       align-items: center;
       font-weight: 900;
-
       .itemName {
         text-align: center;
         font-size: 14px;
@@ -71,12 +79,12 @@ main {
         bottom: 0;
         left: 0;
         right: 0;
-        height: 60.5%;
-        width: 91.5%;
+        height: 80.5%;
+        width: 86%;
         opacity: 0;
         transition: 0.5s ease;
         background: rgba(31, 32, 34, 0.507);
-        margin: 4rem auto;
+        margin: 1rem auto;
 
         cursor: pointer;
         padding-top: 5px;
@@ -109,18 +117,20 @@ main {
         }
       }
       img {
-        width: 100%;
+        width: 240px;
         height: auto;
         margin: 0 auto;
         align-self: center;
         margin-top: 16px;
+        background: ghostwhite;
         cursor: pointer;
+        border: 1px solid rgba(128, 128, 128, 0.356);
         transition: 0.5s;
         @include for-tablet-landscape-down {
-          width: 240px;
+          width: 200px;
         }
         @include for-phone-down {
-          width: 220px;
+          width: 190px;
           height: auto;
         }
       }
