@@ -14,7 +14,7 @@
     padding-bottom: 1rem;
   }
   @include for-phone-down {
-    width: 270px;
+    width: 100%;
   }
 
   .titlesContainer {
