@@ -109,16 +109,18 @@
         // margin: 10px auto;
       }
       .smallImage {
-        width: 62px;
+        width: auto ;
+        max-width: 100% ;
+        height: auto ;
         cursor: pointer;
         @include for-tablet-landscape-down {
-          width: 86px;
-          margin: 1rem auto;
+          // width: 86px;
+          // margin: 1rem auto;
         }
         @include for-phone-down {
-          width: 5em;
-          height: auto;
-          margin: 1rem auto;
+          // width: 5em;
+          // height: auto;
+          // margin: 1rem auto;
           
         }
       }
