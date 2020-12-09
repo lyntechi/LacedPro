@@ -17,7 +17,18 @@ export default function ItemCard({ item }) {
           </div>{" "}
         </Link>
         <p className="itemName">{item.name}</p>
-        <p style={{ color: "red" }}>${item.price}</p>
+        <p
+          style={{
+            color: "red",
+            background: "none",
+            fontWeight: "bold",
+            padding: "0px",
+            marginTop: "7px",
+            fontSize: "13px",
+          }}
+        >
+          Price: ${item.price}
+        </p>
         <br />
       </div>
     </div>

@@ -31,17 +31,19 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0px 15px;
+    margin: 30px 15px;
     width: 280px;
     height: auto;
-    // border: 1px solid rgba(128, 128, 128, 0.356);
-
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+    background-image: url("https://i.imgur.com/oWU1pNb.png");
     @include for-tablet-landscape-down {
       width: 255px;
     }
     @include for-phone-down {
       margin-bottom: 50px;
-      width: 285px;
+      width: 250px;
       padding: 10px 20px;
     }
 
@@ -50,6 +52,7 @@ main {
       flex-direction: column;
       align-items: center;
       font-weight: 900;
+      width: 100%;
       .itemName {
         text-align: center;
         font-size: 14px;
@@ -60,23 +63,33 @@ main {
         }
       }
       P {
-        margin: 5px 0px;
-        font-family: $mainFont;
+        margin-top: 5px;
+        font-family: $links;
         font-size: 12px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        background: rgb(94, 91, 91);
+        padding: 4px 10px;
+        width: 87%;
+        text-align: center;
+        @include for-tablet-landscape-down {
+          width: 78%;
+        }
+        @include for-phone-down {
+          width: 100%;
+        }
       }
       .imageOverlay {
-        // position: absolute;
-        // top: 0;
-        // bottom: 0;
-        // left: 0;
-        // right: 0;
-        // height: 79%;
-        // width: 86.8%;
-        // opacity: 0;
-        // transition: 0.5s ease;
-        // background: rgba(31, 32, 34, 0.507);
-        // margin: 1rem auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 78.5%;
+        width: 86.2%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background: rgba(31, 32, 34, 0.507);
+        margin: 1rem auto;
 
         cursor: pointer;
         padding-top: 5px;
@@ -85,28 +98,28 @@ main {
           opacity: 1;
         }
         @include for-tablet-landscape-down {
-          width: 80%;
-          height: 77.5%;
+          width: 78.5%;
+          height: 75.5%;
         }
         @include for-phone-down {
-          width: 80%;
-          height: 77.5%;
+          width: 84.5%;
+          height: 72.5%;
+          margin: 1.6rem auto;
         }
         .textOverlay {
-          // color: rgb(255, 255, 255);
-          // font-size: 14px;
-          // width: 100%;
-          // position: absolute;
-          // font-weight: bold;
-          // top: 50%;
-          // left: 50%;
-          // -webkit-transform: translate(-50%, -50%);
-          // -ms-transform: translate(-50%, -50%);
-          // transform: translate(-50%, -50%);
-          // text-align: center;
-          // font-family: $mainFont;
-          // letter-spacing: 2px;
-          display: none;
+          color: rgb(255, 255, 255);
+          font-size: 14px;
+          width: 100%;
+          position: absolute;
+          font-weight: bold;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+          font-family: $mainFont;
+          letter-spacing: 2px;
         }
       }
       img {
@@ -115,43 +128,30 @@ main {
         margin: 0 auto;
         align-self: center;
         margin-top: 16px;
-        // background: ghostwhite;
+        background: whitesmoke;
         cursor: pointer;
-        // border: 1px solid rgba(128, 128, 128, 0.356);
+        border: 1px solid rgba(128, 128, 128, 0.356);
         transition: 0.5s;
         @include for-tablet-landscape-down {
           width: 200px;
         }
 
         @include for-phone-down {
-          width: 250px;
+          width: 210px;
           height: auto;
         }
-        &:hover {
-          -moz-transform: scale(2.1) rotate(0deg);
-          -webkit-transform: scale(2.1) rotate(0deg);
-          -o-transform: scale(2.1) rotate(0deg);
-          -ms-transform: scale(2.1) rotate(0deg);
-          transform: scale(2.1) rotate(0deg);
-          -webkit-transition: 0.5s;
-          -moz-transition: 0.5s;
-          -o-transition: 0.5s;
-          -ms-transition: 0.5s;
-          transition: 0.5s;
-          @include for-tablet-landscape-down {
-            // -moz-transform: scale(0.1) rotate(0deg);
-            // -webkit-transform: scale(0.1) rotate(0deg);
-            // -o-transform: scale(0.1) rotate(0deg);
-            // -ms-transform: scale(0.1) rotate(0deg);
-            // transform: scale(0.1) rotate(0deg);
-            // -webkit-transition: 0s;
-            // -moz-transition: 0s;
-            // -o-transition: 0s;
-            // -ms-transition: 0s;
-            // transition: 0s;
-            pointer-events: none;
-          }
-        }
+        // &:hover {
+        //   -moz-transform: scale(1.7) rotate(0deg);
+        //   -webkit-transform: scale(1.7) rotate(0deg);
+        //   -o-transform: scale(1.7) rotate(0deg);
+        //   -ms-transform: scale(1.7) rotate(0deg);
+        //   transform: scale(1.7) rotate(0deg);
+        //   -webkit-transition: 0.5s;
+        //   -moz-transition: 0.5s;
+        //   -o-transition: 0.5s;
+        //   -ms-transition: 0.5s;
+        //   transition: 0.5s;
+        // }
       }
     }
   }

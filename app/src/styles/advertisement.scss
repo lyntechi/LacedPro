@@ -54,7 +54,7 @@
       width: 60%;
       color: rgb(3, 16, 48);
       text-align: center;
-
+      margin-top: 10px;
       font-family: $links;
       @include for-tablet-landscape-down {
         font-size: 13px;
@@ -100,6 +100,7 @@
     img {
       width: 450px;
       height: auto;
+      margin-top: 10px;
       @include for-tablet-landscape-down {
         width: 320px;
         margin-left: 8rem;
