@@ -4,14 +4,6 @@
 main {
   height: 100%;
   background: rgb(255, 255, 255);
-
-  // background-position: left top;
-
-  @include for-tablet-landscape-down {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 .shoppingListPage {
   font-family: $mainFont;
@@ -21,7 +13,7 @@ main {
   justify-content: space-evenly;
   width: 1190px;
   margin: 0px auto;
-  margin-bottom: 8rem;
+  padding-bottom: 5rem;
 
   @include for-tablet-landscape-down {
     width: 600px;
@@ -43,7 +35,8 @@ main {
     width: 280px;
     height: auto;
     border: 1px solid rgba(128, 128, 128, 0.356);
-    background-image: url("https://i.imgur.com/nLByz67.png");
+    background: rgb(255, 255, 255);
+
     @include for-tablet-landscape-down {
       width: 255px;
     }
@@ -93,12 +86,12 @@ main {
           opacity: 1;
         }
         @include for-tablet-landscape-down {
-          width: 100%;
-          height: 54.5%;
+          width: 80%;
+          height: 77.5%;
         }
         @include for-phone-down {
-          width: 100%;
-          height: 54.5%;
+          width: 80%;
+          height: 77.5%;
         }
         .textOverlay {
           color: rgb(255, 255, 255);

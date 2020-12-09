@@ -10,6 +10,10 @@ function Advertisement() {
             Laced Pro Shoes 2021
             <br /> Collections For You
           </h1>
+          <img
+            src="https://www.nicepng.com/png/full/101-1019732_nike-air-max-97-og-qs-silver-bullet.png"
+            alt="nike shoes"
+          />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -21,10 +25,6 @@ function Advertisement() {
             </button>
           </p>
         </div>
-        <img
-          src="https://www.nicepng.com/png/full/101-1019732_nike-air-max-97-og-qs-silver-bullet.png"
-          alt="nike shoes"
-        />
       </div>
     </div>
   );

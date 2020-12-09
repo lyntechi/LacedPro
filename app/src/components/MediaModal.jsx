@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { useParams } from "react-router-dom";
@@ -48,10 +48,12 @@ export default function MediaModal({
   };
   const params = useParams();
   const product = items.find((item) => `${item.id}` === params.id);
-
+  useEffect(() => {
+    return product.gif;
+  }, []);
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <img src={product.gif} className="video" />
+      <img src={product.gif} className="video" alt="" />
 
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img

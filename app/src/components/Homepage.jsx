@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaShoePrints } from "react-icons/fa";
 
 export default function Homepage() {
   return (
@@ -11,6 +12,7 @@ export default function Homepage() {
         </p>
         <h2>
           Laced <span>Pro</span>
+          <FaShoePrints />
           <br />
         </h2>
 
