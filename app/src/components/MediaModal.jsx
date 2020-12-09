@@ -54,8 +54,9 @@ export default function MediaModal({
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <img src={product.gif} className="video" alt="" />
-
+      <p style={{marginTop: '20px', fontSize:'11px', color: 'black'}}>Click images below to enlarge</p>
       <div style={{ display: "flex"}}>
+       
         <img
           src={imageOne}
           className="smallImage"
