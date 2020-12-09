@@ -9,12 +9,13 @@
   background-attachment: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   @include for-tablet-landscape-down {
     padding-top: 4rem;
     padding-bottom: 1rem;
   }
   @include for-phone-down {
-    width: 320px;
+    width: 270px;
   }
 
   .titlesContainer {
@@ -105,7 +106,7 @@
         margin-left: 8rem;
       }
       @include for-phone-down {
-        width: 280px;
+        width: 260px;
         margin-top: 1rem;
         margin-left: 0rem;
       }

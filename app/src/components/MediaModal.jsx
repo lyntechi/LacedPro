@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { useParams } from "react-router-dom";
@@ -48,15 +48,14 @@ export default function MediaModal({
   };
   const params = useParams();
   const product = items.find((item) => `${item.id}` === params.id);
-  useEffect(() => {
-    return product.gif;
-  }, []);
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <img src={product.gif} className="video" alt="" />
-      <p style={{marginTop: '20px', fontSize:'11px', color: 'black'}}>Click images below to enlarge</p>
-      <div style={{ display: "flex"}}>
-       
+      <p style={{ marginTop: "20px", fontSize: "11px", color: "black" }}>
+        Click images below to enlarge
+      </p>
+      <div style={{ display: "flex" }}>
         <img
           src={imageOne}
           className="smallImage"
@@ -69,8 +68,8 @@ export default function MediaModal({
           onClick={secondImage}
           alt="small sneaker icon"
         />
-        </div>
-        <div  style={{ display: "flex"}}>
+      </div>
+      <div style={{ display: "flex" }}>
         <img
           src={imageThree}
           className="smallImage"
