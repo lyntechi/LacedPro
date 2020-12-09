@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import MediaModal from "./MediaModal";
@@ -13,7 +13,9 @@ function IndividualItem({ addToCart }) {
   const addedToCart = () => {
     alert(`${product.name}has been added to cart`);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="imagesVideoContainer">
       <div className="videoContent">
