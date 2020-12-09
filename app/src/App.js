@@ -50,9 +50,9 @@ export default function App() {
     0
   );
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <ItemProvider>
       <main>

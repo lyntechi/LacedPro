@@ -7,7 +7,7 @@ import App from "./App";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <Router onUpdate={() => window.scrollTo(0, 0)}>
+  <Router>
     <App />
   </Router>,
   rootElement
