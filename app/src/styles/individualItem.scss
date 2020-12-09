@@ -114,11 +114,12 @@
         height: auto;
         cursor: pointer;
         @include for-tablet-landscape-down {
-          // width: 86px;
-          // margin: 1rem auto;
+          width: 160px;
+          height: 190px;
+          margin: 1rem auto;
         }
         @include for-phone-down {
-          width: 40%;
+          width: 120px;
           height: 140px;
           margin: 1rem auto;
         }
