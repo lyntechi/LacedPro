@@ -49,6 +49,10 @@ export default function App() {
     (total, currentValue) => total + currentValue.price,
     0
   );
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <ItemProvider>
       <main>
