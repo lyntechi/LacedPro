@@ -1,4 +1,4 @@
-import React, { useContext,useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import ItemCard from "./ItemCard";
 import { ItemContext } from "./Context";
 
