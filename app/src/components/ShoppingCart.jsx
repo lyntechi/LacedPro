@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TiTimesOutline } from "react-icons/ti";
 import { AiOutlinePlusSquare } from "react-icons/ai";
 import { AiOutlineMinusSquare } from "react-icons/ai";
@@ -16,6 +16,9 @@ export default function CheckOut({ cart, removeCartItem }) {
   const removeAlert = () => {
     alert(`Item will be removed from cart`);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={cart.length > 0 ? "cartContainer" : "emptyContainer"}>
       {cart.map((item) => {

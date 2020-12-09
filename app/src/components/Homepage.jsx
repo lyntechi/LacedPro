@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { FaShoePrints } from "react-icons/fa";
 
 export default function Homepage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="homePage">
       <div className="banner-text">
