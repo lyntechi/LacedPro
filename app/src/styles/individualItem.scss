@@ -116,9 +116,10 @@
           margin: 20px 5px;
         }
         @include for-phone-down {
-          width: 40%;
-          // margin: 10px 5px;
-          margin: 60px auto;
+          width: 1rem;
+          height: auto;
+          margin: 1rem auto;
+          
         }
       }
     }
@@ -283,9 +284,9 @@
   }
   @include for-phone-down {
     margin: 0rem auto;
-    width: 90%;
+    width: 250px;
     min-width: 240px;
-    height: 480px;
+    height: auto;
     padding: 10px;
   }
 

@@ -45,7 +45,7 @@ export const ItemProvider = (props) => {
         urlFive:
           "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/lcjcpfpxlsdquyineot8/air-max-270-bowfin-mens-shoe-0x4rcw.jpg",
       },
-      gif: "https://s8.gifyu.com/images/ezgif-3-7225b749b9c7.gif",
+      gif: "https://s8.gifyu.com/images/ezgif-3-fa1db3681cf6.gif",
     },
     {
       name: "Men's Nike Air Max 270",
