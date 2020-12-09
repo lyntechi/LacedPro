@@ -22,10 +22,10 @@ export const ItemProvider = (props) => {
         urlFour:
           "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/hv5b2bcifot9ctnxghn7/air-max-200-worlds-fastest-man-mens-shoe-29b3Dr.jpg",
       },
-      gif: "https://s8.gifyu.com/images/ezgif-3-789ca6302c4e.gif",
+      gif: "https://s8.gifyu.com/images/ezgif-1-3e8fd1822337.gif",
     },
     {
-      name: "Men's Nike Air Max 270 Bowfin",
+      name: "Men's Nike Air Max 270",
       id: 2,
       price: 40.99,
       imageUrl: "https://i.imgur.com/zHYi6RP.png",
@@ -45,7 +45,7 @@ export const ItemProvider = (props) => {
         urlFive:
           "https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/lcjcpfpxlsdquyineot8/air-max-270-bowfin-mens-shoe-0x4rcw.jpg",
       },
-      gif: "https://s8.gifyu.com/images/ezgif-3-fa1db3681cf6.gif",
+      gif: "https://s8.gifyu.com/images/ezgif-1-f44a6bb7b773.gif",
     },
     {
       name: "Men's Nike Air Max 270",
@@ -92,7 +92,7 @@ export const ItemProvider = (props) => {
     },
 
     {
-      name: "Men's Nike Air Max Plus III",
+      name: "Men's Nike Air Max Plus",
       id: 5,
       price: 34.99,
       imageUrl: "https://i.imgur.com/ox0Y3oH.png",
@@ -136,7 +136,7 @@ export const ItemProvider = (props) => {
     },
 
     {
-      name: "Men's Air Jordan 1 Mid SE",
+      name: "Men's Air Jordan 1",
       id: 7,
       price: 49.95,
       imageUrl: "https://i.imgur.com/ZLxTy2i.png",
@@ -158,7 +158,7 @@ export const ItemProvider = (props) => {
     },
 
     {
-      name: "Men's Nike Air Max 720",
+      name: "Men's Nike Max 720",
       id: 8,
       price: 35.99,
       imageUrl: "https://i.imgur.com/5aiYXSI.png",
@@ -180,7 +180,7 @@ export const ItemProvider = (props) => {
     },
 
     {
-      name: "Boys' Nike React Vision",
+      name: "Boys' Nike React",
       id: 9,
       price: 28.99,
       imageUrl: "https://i.imgur.com/BnuU0dm.png",
