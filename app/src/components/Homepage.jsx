@@ -19,7 +19,7 @@ export default function Homepage() {
           <br />
         </h2>
 
-        <p>Sneakers for Women, Men & Kids</p>
+        <p className='bottomP'>Sneakers for Women, Men & Kids</p>
         <br />
 
         <Link to="/shop">
