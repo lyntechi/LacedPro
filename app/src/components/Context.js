@@ -132,7 +132,7 @@ export const ItemProvider = (props) => {
         "An icon hits the paths less traveled in the Nike Air Zoom Pegasus 36 Trail. Perforated mesh upper offers breathable comfort, and double Zoom Air units cushion your stride. Outsole lugs optimize traction when running uphill.",
       shipping:
         "Most of our items are in stock and will ship quickly. **Free shipping on all orders when purchases are made through account**",
-      gif: "https://im.ezgif.com/tmp/ezgif-1-7059e209c1b7.gif",
+      gif: "https://s8.gifyu.com/images/ezgif-1-4b5b30cae6b4.gif",
     },
 
     {

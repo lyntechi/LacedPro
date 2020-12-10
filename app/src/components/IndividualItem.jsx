@@ -11,7 +11,7 @@ function IndividualItem({ addToCart }) {
   const params = useParams();
   const product = items.find((item) => `${item.id}` === params.id);
   const addedToCart = () => {
-    alert(`${product.name}has been added to cart`);
+    alert(`${product.name} has been added to cart`);
   };
   useEffect(() => {
     window.scrollTo(0, 0);
