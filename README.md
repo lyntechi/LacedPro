@@ -1,5 +1,6 @@
 <h1>Laced Pro Sneaker Shopping Website</h1>
 <a href="https://lacedpro.netlify.app/">Visit Website</a>
+<hr/>
 <h2>Installation</h2>
 This project uses npm. Use npm install in the /app directory.
 <hr/>
